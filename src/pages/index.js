@@ -1,0 +1,6 @@
+export { default as HomePage } from './Home/Home'
+export { default as HeroPage } from './Hero/Hero'
+export { default as ProductPage } from './Product/Product'
+export { default as AboutPage } from './About/About'
+export { default as StatsPage } from './Stats/Stats'
+export { default as AloqaPage } from './Aloqa/Aloqa'

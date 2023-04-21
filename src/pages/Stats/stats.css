@@ -1,0 +1,34 @@
+.statImg {
+  width: 500px;
+  height: 333px;
+  transition: all 300ms;
+}
+
+.statImg:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1028px) {
+  .statImg {
+    width: 400px;
+    height: 333px;
+    transition: all 300ms;
+  }
+}
+
+@media (max-width: 480px) {
+  .statImg {
+    width: 300px;
+    height: 230px;
+    transition: all 300ms;
+  }
+}
+
+@media (max-width: 380px) {
+  .statImg {
+    width: 260px;
+    height: 200px;
+    transition: all 300ms;
+  }
+}

@@ -1,0 +1,10 @@
+.cardImg {
+  width: max-content;
+  height: 254px;
+  transition: all 300ms;
+}
+
+.cardImg:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
