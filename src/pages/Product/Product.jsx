@@ -17,7 +17,7 @@ const images = [
     style: "mt-16 px-3 py-5",
   },
   {
-    img: "https://imageslicer.com/tmp/11ea3aded53191/slice_1-9fd8d8cf85.png",
+    img: "https://eshikoyna.uz/wp-content/uploads/2023/04/Untitled-design-14.png",
     alt: "Peregorodka",
     text: "Qalin shishalik peregorodkalar",
     height: "",
