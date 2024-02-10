@@ -97,7 +97,7 @@ const Product = () => {
             src: "https://eshikoyna.uz/wp-content/uploads/2023/04/Uzbte.jpeg",
           },
           {
-            src: "https://imageslicer.com/tmp/11ea3aded53191/slice_1-9fd8d8cf85.png",
+            src: "https://eshikoyna.uz/wp-content/uploads/2023/04/Untitled-design-14.png",
           },
           {
             src: "https://eshikoyna.uz/wp-content/uploads/2023/04/195271993_izobragenie_podokonnik_lalbero_bruno_400_mm_1200x800.jpeg",
