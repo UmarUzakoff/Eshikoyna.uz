@@ -61,7 +61,6 @@ const Stats = () => {
                 <p className="text-gray-700">{item.text2}</p>
               </div>
             ))}
-            ;
           </div>
         </div>
       </Slide>

@@ -6,11 +6,11 @@ const Footer = () => {
   const { language } = useContext(LocalizationApi);
 
   return (
-    <footer className="bg-header rounded-lg dark:bg-gray-900 m-4">
+    <footer className="bg-header rounded-lg m-4">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="flex md:flex-row gap-5 md:gap-0 flex-col items-center justify-center sm:justify-around">
           <a
-            href="https://eshikoyna.uz/"
+            href="/"
             className="flex items-center mb-4 sm:mb-0">
             <img src={logo} alt="logo" className=" w-40 " />
           </a>
@@ -47,8 +47,8 @@ const Footer = () => {
           <a href="https://flowbite.com/" className="hover:underline">
             Eshikoyna.Uz
           </a>
-          &nbsp;| Powered By{" "}
-          <strong className=" underline">Taskin Agency</strong>
+          &nbsp;| Created By{" "}
+          <a href="https://uzakoff.uz" target="_blank" className=" underline">Uzakoff</a>
         </span>
       </div>
     </footer>

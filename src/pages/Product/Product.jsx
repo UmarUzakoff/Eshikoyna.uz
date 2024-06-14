@@ -1,5 +1,4 @@
 import React, { useContext, useRef, useState } from "react";
-import "./product.css";
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
@@ -10,32 +9,25 @@ import Title from "../../components/Title/Title";
 
 const images = [
   {
-    img: "https://eshikoyna.uz/wp-content/uploads/2023/04/Uzbte.jpeg",
+    img: "https://t3.ftcdn.net/jpg/05/76/81/18/360_F_576811807_q50Z5p2FIPC11NPAF1XknYImAtXQDOUo.jpg",
     alt: "Eshiklar",
     text: "PVH yoki alyumindan eshik va oynalar",
-    height: "",
-    style: "mt-16 px-3 py-5",
+    style: "mt-16 px-3",
   },
   {
-    img: "https://eshikoyna.uz/wp-content/uploads/2023/04/Untitled-design-14.png",
+    img: "https://www.bayviewwindows.ca/images_blog/sliding-patio-door-configuration.jpg",
     alt: "Peregorodka",
     text: "Qalin shishalik peregorodkalar",
-    height: "",
-    style: "mt-16 px-5 py-8",
   },
   {
-    img: "https://eshikoyna.uz/wp-content/uploads/2023/04/195271993_izobragenie_podokonnik_lalbero_bruno_400_mm_1200x800.jpeg",
+    img: "https://i.pinimg.com/474x/d4/ee/d0/d4eed03eaa82f3e1a4d4fceb2446aa0e.jpg",
     alt: "Podokonniklar",
     text: "Podokonniklar",
-    height: "pt-32",
-    style: "mt-36 px-5 py-8",
   },
   {
-    img: "https://eshikoyna.uz/wp-content/uploads/2023/04/moskit-1536x922.jpeg",
+    img: "https://m.media-amazon.com/images/I/71vNa6EqX2L._AC_SL1380_.jpg",
     alt: "Moskitniy setkalar",
     text: "Moskitniy setkalar",
-    height: "pt-32",
-    style: "mt-36 px-5 py-8",
   },
 ];
 
@@ -60,24 +52,24 @@ const Product = () => {
             : "Our products"
         }
       />
-      <div className="flex flex-row flex-wrap xl:flex-nowrap justify-center">
+      <div className="max-w-[1500px] mx-auto flex flex-row flex-wrap xl:flex-nowrap justify-center">
         {images.map((item, i) => (
           <Slide bottom key={i}>
-            <div>
-              <div className="cardImg">
+            <div className="w-[350px] group mt-10 sm:mt-0">
+              <div className="w-[330px] h-[300px]">
                 <button
                   type="button"
                   onClick={() => setOpen(true)}
-                  className={`w-[400px] h-[300px]`}>
+                  className="w-[350px] h-[300px]">
                   <img
-                    className={`${item.height} px-5`}
+                    className={`w-full object-cover h-full px-5 duration-300 hover:scale-110 rounded-t-[50%]`}
                     src={item.img}
                     alt={item.alt}
                   />
                 </button>
               </div>
               <div
-                className={`${item.style} mx-6 bg-header text-normtext font-bold text-center text-3xl max-w-sm`}>
+                className={`h-40 mx-5 duration-300 group-hover:bg-normtext group-hover:text-header rounded-b-xl border-b border-x border-normtext bg-header flex justify-center items-center text-normtext font-bold text-center text-3xl max-w-sm`}>
                 <p>{item.text}</p>
               </div>
             </div>
